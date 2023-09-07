@@ -35,6 +35,8 @@ public class Business {
     @Column(nullable = false)
     private String businessType;
     @Column(nullable = false)
+    private String salaryType;
+    @Column(nullable = false)
     private Integer salary;
     @Column(nullable = false)
     private String businessDetail;

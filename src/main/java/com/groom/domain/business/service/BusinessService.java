@@ -47,6 +47,7 @@ public class BusinessService {
                          .workFinishTime(request.getWorkFinishTime())
                          .businessDetail(request.getBusinessDetail())
                          .businessType(request.getBusinessType())
+                         .salaryType(request.getSalaryType())
                          .salary(request.getSalary())
                          .address(request.getAddress())
                          .latitude(request.getLatitude())

@@ -15,6 +15,7 @@ public class BusinessRegisterRequest {
     private String workStartTime;
     private String workFinishTime;
     private String businessType;
+    private String salaryType;
     private Integer salary;
     private String businessDetail;
     private String address;
