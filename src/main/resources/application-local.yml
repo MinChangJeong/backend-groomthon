@@ -27,9 +27,6 @@ spring:
     path-match:
       matching-strategy: ant_path_matcher
 
-client:
-  url: http://localhost:3000
-
 # Hibernate
 logging:
   level:
