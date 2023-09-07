@@ -1,4 +1,12 @@
+namespace: default
 resources:
-  - deployment.yaml
-  - service.yaml
-  - ingress.yaml
+  - nginx.yaml
+  - mariadb.yaml
+  - backend.yaml
+configMapGenerator:
+  - name: nginx
+    files:
+      - configs/default.conf
+  - name: init-db
+    files:
+      - configs/init.sql
