@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  mysqldb:
-    image: mysql
+  mariadb:
+    image: mariadb
     ports:
       - "3306:3306"
     environment:
@@ -22,13 +22,13 @@ services:
       context: ./
     restart: always
     depends_on:
-      - mysqldb
+      - mariadb
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/groom?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+      SPRING_DATASOURCE_URL: jdbc:mysql://mariadb:3306/groom?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: groom
+      SPRING_DATASOURCE_PASSWORD: root
     networks:
       - default
       - app-tier
