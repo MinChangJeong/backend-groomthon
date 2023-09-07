@@ -11,3 +11,5 @@ RUN gradle wrapper
 RUN ./gradlew clean bootJar
 
 ENV DATABASE_URL=jdbc:mariadb://mariadb/groom
+
+CMD ["java", "-jar", "/home/gradle/project/build/libs/groom-0.0.1-SNAPSHOT.jar"]
