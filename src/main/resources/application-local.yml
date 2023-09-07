@@ -37,5 +37,10 @@ logging:
         SQL: DEBUG
         BasicBinder: TRACE
 
+app:
+  cors:
+    # comma (',') seperated list of allowed origins for CORS
+    allowed-origins: * 
+
 jwt:
   secret-key: jwjdkalkjdsklsakdQWEFSDA3eas23dsakfaskd
