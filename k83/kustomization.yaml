@@ -10,3 +10,4 @@ configMapGenerator:
   - name: init-db
     files:
       - configs/init.sql
+
