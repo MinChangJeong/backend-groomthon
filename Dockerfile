@@ -8,7 +8,7 @@ RUN echo "systemProp.http.proxyHost=krmp-proxy.9rum.cc\nsystemProp.http.proxyPor
 
 RUN gradle wrapper
 
-RUN ./gradlew clean build
+RUN ./gradlew clean bootJar
 
 ENV DATABASE_URL=jdbc:mariadb://mariadb/groom
 
