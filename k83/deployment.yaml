@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: krampoline
+  labels:
+    app: krampoline
+spec:
+  selector:
+    matchLabels:
+      app: krampoline
+  template:
+    metadata:
+      labels:
+        app: krampoline
+    spec:
+      containers:
+        - name: krampoline
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_a612c675b858
