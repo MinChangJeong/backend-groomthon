@@ -27,6 +27,9 @@ spring:
     path-match:
       matching-strategy: ant_path_matcher
 
+client:
+  url: http://localhost:3000
+
 # Hibernate
 logging:
   level:
@@ -36,11 +39,3 @@ logging:
       hibernate:
         SQL: DEBUG
         BasicBinder: TRACE
-
-app:
-  cors:
-    # comma (',') seperated list of allowed origins for CORS
-    allowed-origins: * 
-
-jwt:
-  secret-key: jwjdkalkjdsklsakdQWEFSDA3eas23dsakfaskd
